@@ -1,0 +1,12 @@
+## SPA 
+
+AJAX 
+SOAP Services 
+
+
+
+GET 
+POST 
+PUT 
+PATCH
+DELETE 
