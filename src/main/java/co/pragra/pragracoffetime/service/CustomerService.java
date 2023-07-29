@@ -35,12 +35,17 @@ public class CustomerService {
         return this.repository.save(customer);
     }
 
-    public List<Customer> getAll(){
+    public List<Customer> getAll(Optional<String> lastName){
+        if(lastName.isPresent()) {
+            return this.repository.findAllByLastName(lastName.get());
+        }
         return this.repository.findAll();
     }
 
     public Optional<Customer> getById(int id){
         return this.repository.findById(id);
     }
+
+
 
 }
