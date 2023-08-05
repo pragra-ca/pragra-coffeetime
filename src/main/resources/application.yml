@@ -7,8 +7,13 @@ spring:
   jpa:
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
     show-sql: true
   h2:
     console:
       enabled: true
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
